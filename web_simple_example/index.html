@@ -5,20 +5,33 @@
     <link rel="stylesheet" href="src/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
-$(document).ready(function(){
-  $("button").click(function(){
-    $("#div1").fadeOut();
-    $("#div2").fadeOut("slow");
-    $("#div3").fadeOut(3000);
-  });
-});
+    <p> jQuery effect fade used. </p>
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("#div1").fadeOut();
+        $("#div2").fadeOut("slow");
+        $("#div3").fadeOut(3500);
+          });
+    });
+    $(document).ready(function(){
+      $("#hide").click(function(){
+        $("p").hide();
+      });
+      $("#show").click(function(){
+        $("p").show();
+      });
+    });
 </script>
 </head>
-<body>
+<body> <button>Click to fade out boxes</button><br><br>
 <div id="div1" style="width:80px;height:80px;background-color:red;"></div><br>
-<div id="div2" style="width:80px;height:80px;background-color:green;"></div><br>
-<div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+<div id="div2" style="width:90px;height:90px;background-color:purple;"></div><br>
+<div id="div3" style="width:70px;height:70px;background-color:blue;"></div>
 
+<p>If you click on the "Hide" button, I will disappear.</p>
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+    
 <h1>This is a Heading</h1>
 <p>This is a paragraph.</p>
 
